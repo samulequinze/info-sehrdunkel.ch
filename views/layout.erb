@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Meine Seite – <%= @siteTitle %></title>
+  </head>
+  <body>
+  	<nav>
+  		<a href="/">Home</a>
+  		<a href="/about">About</a>
+  		<a href="/contact">Contact</a>
+  		<a href="/form">Login</a>
+  	</nav>
+    <%= yield %>
+    <footer>
+	    <p>Copyright: <time datetime="<%= @year%>-<%=@month%>-<%=@day%>"><%= @year %></time>, <%= @author %></p>
+    </footer>
+  </body>
+</html>
